@@ -1,0 +1,32 @@
+id: org.kandomenu.Kando
+runtime: org.freedesktop.Platform
+runtime-version: "24.08"
+sdk: org.freedesktop.Sdk
+command: /app/AppRun
+finish-args:
+  - --device=dri
+  - --socket=x11
+  - --socket=wayland
+  - --socket=system-bus
+  - --socket=session-bus
+  - --talk-name=org.freedesktop.Flatpak
+  - --talk-name=org.gnome.Shell.Extensions.KandoIntegration
+modules:
+  - name: kando
+    buildsystem: simple
+    sources:
+      # - type: file
+      #   dest-filename: kando.AppImage
+      #   url: https://github.com/kando-menu/kando/releases/download/v1.5.1/Kando-1.5.1-x86_64.AppImage
+      #   sha256: 2f498102294f8d8dee764ef72359e30332659281f130323743d98c24b2bf7c29
+      - type: file
+        dest-filename: kando.AppImage
+        path: Kando-1.5.1-x86_64.AppImage
+        sha256: 2bb710933102b867ddb10ccc57088d256af86ab292094ce7b414a09a1bbbd452
+    build-commands:
+      - chmod +x kando.AppImage
+      - ./kando.AppImage --appimage-extract
+      - cp -r squashfs-root/* /app
+    cleanup:
+      - squashfs-root
+      - kando.AppImage
