@@ -3,7 +3,7 @@
     <id>menu.kando.Kando</id>
 
     <name>Kando</name>
-    <summary>The cross-platform pie menu.</summary>
+    <summary>The Cross-Platform Pie Menu.</summary>
 
     <metadata_license>CC0-1.0</metadata_license>
     <project_license>MIT</project_license>
@@ -22,16 +22,45 @@
         </p>
     </description>
 
+    <url type="homepage">https://github.com/kando-menu/kando</url>
+    <url type="bugtracker">https://github.com/kando-menu/kando/issues</url>
+    <url type="donation">https://schneegans.github.io/sponsors/</url>
+    <url type="translate">https://hosted.weblate.org/engage/kando/</url>
+    <url type="help">https://discord.gg/hZwbVSDkhy</url>
+
     <launchable type="desktop-id">menu.kando.Kando.desktop</launchable>
+
+    <developer id="io.github.schneegans">
+        <name>Simon Schneegans</name>
+    </developer>
+
     <screenshots>
         <screenshot type="default">
-            <image>https://ph-files.imgix.net/91644f84-46c9-405a-a290-c95894fc54b0.jpeg</image>
+            <image>https://raw.githubusercontent.com/kando-menu/flatpak/refs/heads/main/screenshots/screenshot01.jpeg</image>
         </screenshot>
         <screenshot>
-            <image>https://ph-files.imgix.net/2dfae367-9bca-4052-b870-44cc1c9c9055.jpeg</image>
+            <image>https://raw.githubusercontent.com/kando-menu/flatpak/refs/heads/main/screenshots/screenshot02.jpeg</image>
         </screenshot>
         <screenshot>
-            <image>https://ph-files.imgix.net/90866d42-09e3-464f-8ffb-bd89d089630d.jpeg</image>
+            <image>https://raw.githubusercontent.com/kando-menu/flatpak/refs/heads/main/screenshots/screenshot03.jpeg</image>
+        </screenshot>
+        <screenshot>
+            <image>https://raw.githubusercontent.com/kando-menu/flatpak/refs/heads/main/screenshots/screenshot04.jpeg</image>
         </screenshot>
     </screenshots>
+
+    <releases>
+        <release version="1.5.1" date="2024-11-03T13:17:48Z">
+            <description>
+                <p>Read news about this release on the <a href="https://github.com/kando-menu/kando/releases/tag/v1.5.1">GitHub release page</a>.</p>
+            </description>
+            <url>https://github.com/kando-menu/kando/releases/tag/v1.5.1</url>
+        </release>
+        <release version="1.5.0" date="2024-11-03T12:23:04Z">
+            <description>
+                <p>Read news about this release on the <a href="https://github.com/kando-menu/kando/releases/tag/v1.5.0">GitHub release page</a>.</p>
+            </description>
+            <url>https://github.com/kando-menu/kando/releases/tag/v1.5.0</url>
+        </release>
+    </releases>
 </component>
