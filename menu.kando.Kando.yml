@@ -1,4 +1,4 @@
-id: org.kandomenu.Kando
+id: menu.kando.Kando
 runtime: org.freedesktop.Platform
 runtime-version: "24.08"
 sdk: org.freedesktop.Sdk
