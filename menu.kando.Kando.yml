@@ -20,11 +20,19 @@ modules:
       - type: file
         dest-filename: kando.AppImage
         path: Kando-1.5.1-x86_64.AppImage
-        sha256: 2bb710933102b867ddb10ccc57088d256af86ab292094ce7b414a09a1bbbd452
+      - type: file
+        path: menu.kando.Kando.svg
+      - type: file
+        path: menu.kando.Kando.desktop
+      - type: file
+        path: menu.kando.Kando.metainfo.xml
     build-commands:
       - chmod +x kando.AppImage
       - ./kando.AppImage --appimage-extract
       - cp -r squashfs-root/* /app
+      - install -Dm644 menu.kando.Kando.svg /app/share/icons/hicolor/scalable/apps/menu.kando.Kando.svg
+      - install -Dm644 menu.kando.Kando.desktop /app/share/applications/menu.kando.Kando.desktop
+      - install -Dm644 menu.kando.Kando.metainfo.xml /app/share/metainfo/menu.kando.Kando.metainfo.xml
     cleanup:
       - squashfs-root
       - kando.AppImage

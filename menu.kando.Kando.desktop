@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Kando
+Comment=The cross-platform pie menu.
+Categories=Utility;
+Icon=menu.kando.Kando
+Exec=AppRun
+Terminal=false
