@@ -9,6 +9,7 @@ finish-args:
   - --socket=wayland
   - --talk-name=org.freedesktop.Flatpak
   - --talk-name=org.gnome.Shell
+  - --talk-name=org.kde.KWin
 modules:
   - name: kando
     buildsystem: simple
